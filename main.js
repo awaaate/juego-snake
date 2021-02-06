@@ -161,9 +161,9 @@ function drawBackground() {
 function keyPressed() {
     if (gameOver) {
         gameOver = false;
-        snake = [{ x: 0, y: 32 }];
+        snake = [{ x: 32, y: 32 * 3 }];
         dir_y = 0;
-        dir_x = x;
+        dir_x = 1;
         size = 1;
     } else {
         const [x, y] = handleKeydown(key);
